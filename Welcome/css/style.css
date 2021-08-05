@@ -1,0 +1,100 @@
+body {
+    font-family: arial;
+    line-height: 1.6em;
+    background-color: #d3d3d3;
+    margin: 0;
+    padding: 0;
+}
+
+.countainer {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#Main {
+    text-align: center;
+    margin: 60px 20px 60px 20px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#Main>div {
+    display: flex;
+    align-items: center;
+}
+
+#Welcome {
+    background-color: white;
+    flex-direction: column;
+    width: 50%;
+}
+
+#Welcome h1 {
+    font-size: 320%;
+    margin: 8%;
+    color: #B4AFCF;
+}
+
+#Welcome p {
+    font-size: 130%;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.582);
+    width: 80%;
+    line-height: 3rem;
+}
+
+#SignIn {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    width: 20%;
+    background-color: #B4AFCF;
+    border-radius: 25px 0px 0px 25px;
+    height: 400px;
+    color: white;
+}
+
+#SignUp {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    width: 20%;
+    background-color: #B4AFCF;
+    border-radius: 0px 25px 25px 0px;
+    height: 400px;
+    color: white;
+}
+
+#SignInButton,
+#SignUpButton {
+    border: solid 2px #F4F8F7;
+    border-radius: 50px;
+    padding: 16px 16px;
+    cursor: pointer;
+}
+
+#SignInButton a,
+#SignUpButton a {
+    text-decoration: none;
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    #Main {
+        flex-direction: column;
+    }
+    #SignIn {
+        border-radius: 25px 25px 0px 0px;
+        width: 100%;
+        height: 60%;
+    }
+    #Welcome {
+        width: 100%;
+    }
+    #SignUp {
+        border-radius: 0px 0px 25px 25px;
+        width: 100%;
+        height: 30%;
+    }
+}
